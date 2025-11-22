@@ -23,7 +23,8 @@ class Television:
         """
         Method switches the current muted status
         """
-        self.__muted = not self.__muted
+        if self.__status:
+            self.__muted = not self.__muted
 
     def channel_up(self)-> None:
         """
